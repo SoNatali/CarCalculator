@@ -1,0 +1,26 @@
+package org.example;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+
+        var scanner = new Scanner(System.in);
+        System.out.println("Hello and welcome!");
+        System.out.println("At what speed will your car travel?");
+        var speed = scanner.nextDouble();
+
+        while (true) {
+
+            System.out.println("Enter how much time you plan to spend on the road in hours");
+            var time = scanner.nextDouble();
+
+            if (time == 0)
+                break;
+
+            var result = speed * time;
+            System.out.println("Result = " + result);
+
+        }
+
+    }
+}
